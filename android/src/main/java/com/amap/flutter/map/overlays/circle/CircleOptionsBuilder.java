@@ -24,7 +24,9 @@ public class CircleOptionsBuilder implements CircleOptionsSink {
 
     @Override
     public void setLineWidth(float lineWidth) {
-        circleOptions.strokeWidth(lineWidth);
+        if(lineWidth>0){
+            //circleOptions.strokeWidth(lineWidth);
+        }
     }
 
     @Override

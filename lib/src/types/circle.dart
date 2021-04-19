@@ -7,12 +7,12 @@ class Circle extends BaseOverlay {
   Circle({
     @required this.position,
     @required this.radius,
-    double lineWidth = 1,
+    double lineWidth = 0,
     this.strokeColor = const Color(0xCC00BFFF),
     this.fillColor = const Color(0xC487CEFA),
   }) : assert(position != null), assert(position != null),
   this.lineWidth =
-            lineWidth == null ? 1 : (lineWidth <= 0 ? 1 : lineWidth),
+            lineWidth == null ? 0 : (lineWidth <= 0 ? 0 : lineWidth),
   super();
 
   /// 位置,不能为空

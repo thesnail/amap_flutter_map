@@ -24,7 +24,7 @@ public class CircleUtil {
 
         final Object lineWidth = data.get("lineWidth");
         if (lineWidth != null) {
-            sink.setLineWidth(ConvertUtil.toFloat(radius));
+            //sink.setLineWidth(ConvertUtil.toFloat(lineWidth));
         }
 
         final Object strokeColor = data.get("strokeColor");

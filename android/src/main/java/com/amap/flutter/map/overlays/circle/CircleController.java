@@ -36,7 +36,9 @@ public class CircleController implements CircleOptionsSink{
 
     @Override
     public void setLineWidth(float lineWidth) {
-        circle.setStrokeWidth(lineWidth);
+        if(lineWidth>0){
+            //circle.setStrokeWidth(lineWidth);
+        }
     }
 
     @Override

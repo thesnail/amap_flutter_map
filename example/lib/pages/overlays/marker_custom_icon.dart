@@ -65,7 +65,13 @@ class _BodyState extends State<_Body> {
       apiKey: ConstConfig.amapApiKeys,
       markers: Set<Marker>.of(_initMarkerMap.values),
       circles: {
-        Circle(position:LatLng(39.909187,116.447451),radius: 5000)
+        Circle(
+          strokeColor:Color(0x99FFFFFF),
+          fillColor:Color(0x861A7EF1),
+          position:LatLng(39.909187,116.447451),
+          radius: 5000,
+          lineWidth:0
+        )
       }
     );
     return Container(
